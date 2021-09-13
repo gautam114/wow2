@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap-5-->
+    <link rel='stylesheet' href='css/bootstrap.css'>
+
+    <!--css-->
+    <link rel='stylesheet' href='css/style.css'>
+    <!--animate-->
+    <link rel='stylesheet' href='css/animate.css'>
+    <!--owl carousel-->
+    <link rel='stylesheet' href='css/owl.carousel.min.css'>
+    <title>Document</title>
+</head>
+<body onload='load()'>
+<span class='bi bi-dice'></span>
+    
+    <header class='star'>
+        <nav class='navbar navbar-expand-lg navbar-dark fixed-top shadow star'>
+            <div class='container'>
+                <h1 class='navbar-brand nimate__animated animate__backInRight  text-secondary'>Brand</h1>
+                <button class='navbar-toggler' data-bs-target='#colap' data-bs-toggle='collapse'><span class='navbar-toggler-icon'></span></button>
+                <div class='navbar-collapse collapse' id='colap'>
+                    <ul class='navbar-nav ms-auto'>
+                        <li class='nav-item '><a href='javascript:void(0)' class='nav-link' data-scroll-nav="0">Home</a></li>
+                        <li class='nav-item '><a href='javascript:void(0)' class='nav-link' data-scroll-nav="1">featured</a></li>
+                        <li class='nav-item '><a href='javascript:void(0)' class='nav-link' data-scroll-nav="2">Facts</a></li>
+                        <li class='nav-item '><a href='javascript:void(0)' class='nav-link' data-scroll-nav="3">downloads</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section id='head_sec' class='container  d-flex align-items-center  ' data-scroll-index="0">
+                 <div class='row  gy-4'>
+                    <div class='col-md-6 col-12 mx-auto   d-flex align-items-center '>
+                      <div>
+                          <div>
+                              <h1>best mobile app</h1>
+                              <h1>for business</h1>
+                          </div>
+                          <div class='my-3'>
+                              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, modi? Molestiae odit deleniti voluptatum sit, deserunt facere. Dolores amet at error quibusdam aliquam obcaecati quos excepturi earum. Labore, modi amet!</p>
+                          </div>
+                          <div>
+                              <button class='btn btn-light rounded-pill'>Download App</button> <button class='btn btn-light rounded-pill' data-bs-target='#colap2' data-bs-toggle='collapse' id='wave'><span class='bi bi-play'></span></button>
+                              <div class='collapse' id='colap2'>
+                                <iframe width="100%" height='auto' src="https://www.youtube.com/embed/AAD4qz-PAQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                              </div>
+                              <button class='btn fs-3 star' id='stars'><span class='bi bi-stars'></span></button>
+<button id='chng_btn' class='btn rounded-circle position-fixed top-50 start-0 fs-1' onclick='theme()'><span class='bi bi-cloud-sun-fill text-primary'></span></button>
+                            </div>
+                      </div>
+                    </div>
+                    <div class='col-md-6 col-12 mx-auto' id='pic_div'>
+                        <div id='galaxy'>
+
+                        </div>
+                        <div id='pic'>
+                          <img src='image/phone.png'>
+                          <button class='btn fs-3 star' id='F_star'><span class='bi bi-star-fill'></span></button>
+                          <button class='btn fs-3 star' id='H_star'><span class='bi bi-star-half'></span></button>
+                        </div>
+                    </div>
+                 </div>
+        </section>
+    </header>
+<!---featured content-->
+
+<div class='container my-5' id='featured' data-scroll-index="1">
+    <h1 class='text-center star py-2'>featured <g class='text-info'>content</g></h1>
+    <div class='row '>
+<div class='gotm owl-carousel'>
+   
+       <div class='card go p-2 shadow' >
+       <div class='card-header'>
+           <span>Gautam</span><span class='bi bi-hand-thumbs-up-fill text-primary head_span'></span>
+       </div>
+       <div class='card-body bg-info ho'>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium blanditiis culpa voluptas aut ducimus? Officia provident quisquam et, perferendis quasi deleniti eos </p>
+       </div>
+
+   </div>
+   <div class='card go p-2 shadow' >
+    <div class='card-header'>
+        <span>Gautam</span><span class='bi bi-hand-thumbs-down-fill text-info head_span'></span>
+    </div>
+    <div class='card-body bg-success ho'>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium blanditiis culpa voluptas aut ducimus? Officia provident quisquam et, perferendis quasi deleniti eos </p>
+    </div>
+    
+</div>
+<div class='card go p-2 shadow' >
+    <div class='card-header'>
+    <span>Guatam</span><span class='bi bi-hdd-fill text-danger head_span'></span>
+    </div>
+    <div class='card-body bg-warning ho'>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium blanditiis culpa voluptas aut ducimus? Officia provident quisquam et, perferendis quasi deleniti eos </p>
+    </div>
+    
+</div>
+<div class='card go p-2 shadow' >
+    <div class='card-header '>
+        <span>Gautam</span><span class='bi bi-arrow-clockwise text-warning head_span'></span>
+    </div>
+    <div class='card-body bg-primary ho'>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium blanditiis culpa voluptas aut ducimus? Officia provident quisquam et, perferendis quasi deleniti eos </p>
+    
+    </div>
+   
+</div>
+
+</div>
+    </div>
+</div>
+
+<!--fun facts-->
+
+
+<div class='container my-5' id='fun' data-scroll-index="2">
+    <div class='row'>
+        <div class='col-md-6 col-10 mx-auto align-items-center d-flex justify-content-center'>
+            <img src='image/i7.png' id='i_phn'>
+        </div>
+        <div class='col-md-6 col-12' >
+            <h1 class='text-center star'>Fun <span class='text-info'>Facts</span></h1>
+            <p class='star'>fun facts is that this web site is made by gotm parchanda by html,css ,js,boostrap i made this web site only by me without any helo ..</p>
+            <div class='row gy-2 mt-2' id='ro' >
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!---how-it-works-->
+
+<div class='container my-5 py-2' id='bg_img' data-scroll-index="3">
+    <h1 class='py-2 text-center star'>How it <span class='text-info'>works</span></h1>
+<div class='row' id='work_ro'>
+    
+</div>
+</div>
+<!---footer-->
+<footer class='mt-auto text-center bg-dark text-white'>
+<p>web site developed by <span class='bi bi-hammer text-danger'>gautam</span> parchanda</p>
+</footer>
+
+<!--bootsrap-->
+<script src='js/bundel.min.js'></script>
+<!---js-->
+<script src='js/style.js'></script>
+<!--owl-->
+<script src='js/jquery.min.js'></script>
+<script src='js/owl.carousel.min.js'></script>
+
+<script>
+    $('.gotm').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            
+        },
+        600:{
+            items:2,
+        
+        },
+        1000:{
+            items:3,
+           
+        }
+    }
+});
+
+</script>
+<!--scrollit-->
+<script src='js/scrollIt.min.js'></script>
+<script>
+    $(function(){
+  $.scrollIt();
+});
+
+</script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,259 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+html{
+  font-size:62.5%;
+  scroll-behavior: smooth;
+  height:100vh;
+}
+body{
+ 
+    display: flex; flex-direction: column;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+
+}
+* h1{
+    font-size:4rem;
+}
+* p{
+    font-size:1.5rem;
+}
+header{
+    height:100vh;
+    background:rgba(149, 123, 149,0.5);
+    display: flex; justify-content: center; align-items: center;
+    padding:0 0;
+    border-radius: 0 0 20rem 0;
+    
+}
+.navbar li{
+    font-size:1.8rem;
+    margin:0 1rem;
+    
+    
+}
+.navbar-nav li a{
+    color:rgb(149, 123, 149);
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar-brand{
+    font-size:3rem;
+    
+}
+#head_sec{
+    margin-top: 5rem;
+    height:90%;
+    width:100%;
+    
+}
+
+
+#head_sec p{
+    font-size:1.5rem;
+    margin:0 2rem;
+}
+#head_sec button{
+    font-size:1.5rem;
+}
+#pic_div{
+    display: flex; justify-content: center; align-items: center;
+    position: relative;
+    text-align: center;
+
+}
+#galaxy{
+    position:absolute;
+    width:50%;
+    height:50%;
+    border-radius: 50%;
+z-index: 0;
+animation :galaxy 5s ease infinite;
+}
+#galaxy::before{
+    content:'';
+    background:rgb(235, 222, 222);
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    position: absolute;
+    top:5%;
+    left:5%;
+   
+}
+
+@keyframes galaxy{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+#pic{
+    padding-bottom:2rem;
+}
+#pic img{
+    height:100%;
+    width:50%; 
+    animation:bouncePhone 5s ease infinite;
+}
+/*
+@keyframes bouncePhone{
+    0%,100%{transform: translateY(0);}
+    50%{transform: translateY(-3rem);}
+}
+*/
+#F_star{
+    top:10%;
+position:absolute;
+animation: rotate 3s ease infinite;
+}
+@keyframes rotate{
+    0%{transform: rotate(0); }
+    100%{transform: rotate(360deg);}
+}
+
+#H_star{
+    position:absolute;
+    left:10%;
+    
+     top:50%;
+     animation :bounceT 5s ease infinite;
+    
+}
+
+@keyframes bounceT{
+    
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(3rem);
+    }
+}
+
+
+
+#stars{
+    position:absolute;
+    top:10%;
+    left:30%;
+}
+#chng_btn{
+    background:black;
+}
+#wave{
+    animation: wave 2s ease infinite;
+}
+
+@keyframes wave{
+0%{
+    transform: scale(0.94);
+    box-shadow: 0 0 0 0 rgba(255,255,255,0.7);
+}    
+70%{
+transform:scale(1);
+box-shadow: 0 0 0 1.2rem rgba(255,255,255,0);
+
+}
+100%{
+    transform: scale(0.94);
+    box-shadow: 0 0 0 0 rgba(255,255,255,0.7);
+}
+}
+#featured p{
+  font-size: 1.5rem;
+}
+#featured span{
+    font-size:1.5rem;
+    font-weight: bold;
+}
+.go{
+    overflow: hidden;
+    position:relative;
+    cursor: pointer;
+}
+ .head_span{
+position: absolute;
+right:-10%;
+transition:all  0.5s ease;
+}
+.go:hover .head_span{
+
+    right:50%;
+    transition:all  0.5s ease;
+    
+}
+.go .a1,.a11,.a111{
+    color: black;
+    background:aliceblue;
+font-weight:bolder;
+    opacity: 0.6;
+    border-radius: 50%;
+    font-size:1.5rem;
+}
+.a1{
+    position:absolute;
+    left:-10%;
+    top:20%;
+    transition:0.5s;
+}
+.go:hover .a1{
+    left:20%;
+  top:20%; 
+  transition:0.5s;
+}
+.a11{
+    position:absolute;
+    left:-10%;
+    top:50%;
+    
+    transition:0.5s;
+}
+.go:hover .a11{
+    top:50%;
+    left:80%;
+    transition:0.5s;
+}
+.a111{
+    position:absolute;
+    left:-10%;
+    bottom:0;
+    
+    transition:0.5s;
+}
+.go:hover .a111{
+    bottom:0;
+    left:30%;
+    transition:0.5s;
+}
+
+#i_phn{
+    height:60vh;
+animation: I-bounce 3s ease infinite; 
+}
+
+#fun p{
+    font-size: 1.5rem;
+}
+
+#bg_img{
+    background:linear-gradient(to right,rgb(122, 122, 122,0.4)50%,rgb(226, 164, 164,0.5)) ,url('../image/night.jpg');
+    background-size: 100% 100%;
+    background-blend-mode: lighten;
+}
+#chng_btn{z-index: 99;}
+/*
+@keyframes I-bounce{
+    0%,100%{transform: translateY(0);}
+    50%{transform: translateY(3rem);}
+}
+*/
+@media(max-width:500px){
+    html{
+        font-size:50%;
+    }
+    #work_ro p{
+        font-size:45%;
+    }
+}
